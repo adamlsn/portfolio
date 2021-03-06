@@ -21,7 +21,9 @@ body {
  header {
     background-color: var(--purple);
     background-size: cover;
-    padding: 20px 40px;
+    padding: 20px 35px;
+    display: flex;
+    flex-wrap: wrap;
  }
 
  header h1 {
@@ -30,6 +32,7 @@ body {
      color: var(--orange);
      margin: 0;
      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+     flex-grow: 2;
  }
 
  header a {
@@ -38,14 +41,20 @@ body {
  }
 
  header nav ul {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-items: flex-end;
      list-style: none;
+     padding-top: 20px;
  }
 
  header nav ul li a {
      padding: 10px 15px;
      font-weight: lighter;
-     font-size: 1vw;
+     font-size: 1.5vw;
      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
  }
 
  header nav ul li a:hover {
@@ -60,5 +69,6 @@ body {
  .hero {
      background-image: url("../images/bg.jpg");
      background-size: cover;
-     background-attachment: fixed;
+     margin: 0;
+     padding: 100 auto;
  }
