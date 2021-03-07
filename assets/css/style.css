@@ -17,6 +17,9 @@ body {
     background-color: var(--tan);
 }
 
+body p {
+}
+
 /* HEADER STYLES */
  header {
     background-color: var(--purple);
@@ -78,7 +81,7 @@ body {
  }
 
  .hero h2 {
-     padding: 150px 25px 20px 0;
+     padding: 120px 25px 0;
      font-size: 30px;
      font-weight: lighter;
      color: var(--orange);
@@ -94,6 +97,8 @@ body {
      padding: 20px;
      font-weight: 1;
      text-shadow: rgba(0, 0, 0, 0.7);
+     text-align: right;
+     
  }
 
  .flex-container {
@@ -117,9 +122,6 @@ body {
  }
 
  .intro h2 {
-     flex-grow: 2;
-     border-right: 4px solid;
-     border-color: var(--purple);
  }
 
  .intro p {
@@ -153,4 +155,8 @@ body {
  footer a {
     text-decoration: none;
     color: var(--orange);
+ }
+
+ section {
+     padding: 60px;
  }
