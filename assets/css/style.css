@@ -81,7 +81,7 @@ body p {
  }
 
  .hero h2 {
-     padding: 120px 25px 0;
+     padding: 120px 10px 0;
      font-size: 30px;
      font-weight: lighter;
      color: var(--orange);
@@ -98,7 +98,7 @@ body p {
      font-weight: 1;
      text-shadow: rgba(0, 0, 0, 0.7);
      text-align: right;
-     
+     flex: 1.5;
  }
 
  .flex-container {
@@ -127,7 +127,6 @@ body p {
  .intro p {
      text-align: left;
      padding-left: 20px;
-     border-left: 4px solid var(--purple);
  }
 
  .intro p::first-line{
@@ -137,12 +136,44 @@ body p {
  .portrait {
      height: 240px;
      overflow: hidden;
-     border: 3px solid var(--purple);
      border-radius: 5px;
+ }
+
+ .intro div:first-child {
+    border-right: 3px solid var(--purple);
  }
 
  /* WORK SECTION */
 
+ .parent {
+    width: 100vw;
+    display: flex;
+  }
+  .col {
+    flex: 0 0 50vw;
+    height: 50vw;
+    background: blue;
+  }
+  .wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .box {
+    flex: 0 0 25vw;
+    height: 25vw;
+  }
+  .red {
+    background: red;
+  }
+  .pink {
+    background: pink;
+  }
+  .orange {
+    background: orange;
+  }
+  .grey {
+    background: grey;
+  }
  /* CONTACT SECTION */
 
  /* FOOTER SECTION */
@@ -170,4 +201,33 @@ body p {
 
  section {
      padding: 60px;
+ }
+
+ @media screen and (max-width: 980px) {
+     header {
+         position: relative;
+     }
+
+     header h1 {
+         width: 100%;
+         text-align: center;
+     }
+
+     header nav {
+         flex: 100%;
+         text-align: center;
+     }
+
+     .section-title {
+         flex: 100%;
+         
+     }
+
+     .section-title h2 {
+         flex: 0 0 100%;
+     }
+ }
+
+ @media screen and (max-width: 768px) {
+
  }
