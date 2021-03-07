@@ -42,7 +42,7 @@ body {
      text-decoration: none;
      color: var(--orange);
      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-     font-weight: ;
+     font-weight: 1;
  }
 
  header nav ul {
@@ -84,6 +84,52 @@ body {
      color: var(--orange);
      text-shadow: rgba(0, 0, 0, 0.5);
      font-style: italic;
+ }
+
+ /* BODY STYLING */
+
+ .section-title {
+     font-size: 40px;
+     margin: 0 auto;
+     padding: 20px;
+     font-weight: 1;
+     text-shadow: rgba(0, 0, 0, 0.7);
+ }
+
+ .flex-container {
+     display: flex;
+ }
+
+ .flex-child {
+     flex: 1;
+     border: 2px;
+ }
+
+ .flex-child:first-child {
+     margin-right: 100px;
+ }
+
+ /* ABOUT ME SECTION */
+
+ .intro {
+     padding: 20px;
+     margin: auto;
+ }
+
+ .intro h2 {
+     flex-grow: 2;
+     border-right: 4px solid;
+     border-color: var(--purple);
+ }
+
+ .intro p {
+     text-align: left;
+
+
+ }
+
+ .intro p::first-line{
+     font-weight:bold;
  }
 
  /* FOOTER SECTION */
