@@ -103,9 +103,10 @@ img {
      padding-right: 25px;
      font-weight: 1;
      /* text-shadow: rgba(0, 0, 0, 0.7); */
-     /* text-align: right; */
+     text-align: right;
      border-right: solid 4px var(--pink);
      width: 25%;
+     height: 100%;
  }
 
  .flex-container {
@@ -134,7 +135,7 @@ img {
  }
 
  .intro img {
-     padding-left: 20px ;
+     margin-left: 20px ;
  }
 
  .intro p {
@@ -168,6 +169,7 @@ img {
     grid-template-rows: repeat(4, 180px);
     grid-gap: 10px;
     grid-auto-flow: dense;
+    margin-left: 10px
 }
 
 .work-layout p {
@@ -294,6 +296,31 @@ img {
      .section-title h2 {
          flex: 0 0 100%;
      }
+
+     .intro img {
+         padding: 0
+     }
  }
 
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0 15px;
+    }
+    .flex-container {
+        display: inline;
+    }
+
+    .section-title {
+        width: 100%;
+        border-right: none;
+        border-bottom: 5px solid var(--pink);
+        margin: 25px 0 20px 0;
+        padding: 0;
+        padding-bottom: 15px
+    }
+
+    .contact {
+        margin-bottom: 25px;
+    }
+}
  
