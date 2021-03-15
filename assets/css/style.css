@@ -17,9 +17,7 @@ body {
     background-color: var(--tan);
 }
 
-img {
-    max-width: 100%;
-}
+
 
 /* HEADER STYLES */
  header {
@@ -122,10 +120,6 @@ img {
      flex-wrap: wrap;
      width: 100%;
  }
-
- /* .flex-child:first-child {
-     margin-right: 30px;
- } */
 
  /* ABOUT ME SECTION */
 
@@ -319,8 +313,22 @@ img {
         padding-bottom: 15px
     }
 
+    .intro p {
+        margin-top: 10px;
+    }
+
     .contact {
         margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    header nav ul {
+        justify-content: space-around;
+    }
+
+    header nav ul li a {
+        margin-top: 15px;
     }
 }
  
